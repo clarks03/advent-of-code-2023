@@ -12,11 +12,6 @@ with open("input", "r") as file:
         # splitting the numbers into winning numbers and user numbers
         winning_numbers = numbers.split("|")[0].strip().split(' ')
         your_numbers = numbers.split("|")[1].strip().split(' ')
-        print(line)
-        print(numbers)
-        print(winning_numbers)
-        print(your_numbers)
-        print('---')
 
         # determining winning numbers
         for number in your_numbers:

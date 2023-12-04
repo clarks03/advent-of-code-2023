@@ -1,20 +1,17 @@
 with open("input", "r") as file:
     acc = 0
     for line in file:
-        print(line)
         line = line.strip()
         game = line.split(":")
         game_number = game[0][5:]
 
         games = game[1].strip().split(';')
-        print(games)
         is_invalid = False
         for game in games:
             game = game.strip()
             game = game.split(',')
             for colour in game:
                 colour = colour.strip()
-                print(colour)
 
                 if "red" in colour:
                     num = colour.split(' ')
